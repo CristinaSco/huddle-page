@@ -1,0 +1,110 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* - Violet: hsl(257, 40%, 49%) */
+/* - Soft Magenta: hsl(300, 69%, 71%) */
+
+body{
+  background-image: url("images/bg-desktop.svg");
+  background-color: hsl(257, 40%, 49%);
+}
+
+.container{
+  margin-top: 90px;
+  padding: 40px;
+}
+
+.navbar{
+  background-color:hsl(0, 0, 0);
+  position:absolute;
+  top: 4%;
+  left: 7%;
+}
+
+.logo{
+  height: 40px;
+  width:auto;
+}
+
+.illustration{
+  object-fit: cover;
+  padding: 0;
+}
+
+.text{
+  padding:35px 0 0 35px;
+}
+h2{
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-size:30px;
+  margin-top: 65px;
+}
+
+p{
+  font-family: 'Poppins', sans-serif;
+  color:white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+button{
+  width: 150px;
+  padding:10px;
+  border-radius: 30px;
+  border:1px solid white;
+  background-color: white;
+  color:hsl(257, 40%, 49%);
+  font-family: 'Poppins', sans-serif;
+  box-shadow:15px 15px 50px black;
+}
+
+button:hover{
+  border:1px solid hsl(300, 69%, 71%);
+  background-color: hsl(300, 69%, 71%);
+  color:white;
+}
+
+.smallrow{
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ionicon{
+  height:33px;
+  width: auto;
+  margin-right: 10px;
+  border: 1px solid hsl(0, 0%, 59%);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+svg:hover path{
+  fill: hsl(300, 69%, 71%);
+}
+.ionicon:hover{
+  border: 1px solid hsl(300, 69%, 71%);
+}
+
+@media screen and (max-width:767px){
+
+  .text{
+    text-align: center;
+  }
+
+  button{
+    width: 250px;
+  }
+
+  .text{
+    padding:0;
+  }
+
+  .smallrow{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
